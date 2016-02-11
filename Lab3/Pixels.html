@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixels</title>
+</head>
+<body>
+<h1 id="pixel"></h1>
+
+<script>
+
+    window.addEventListener("resize", getPixel);
+
+    function getPixel(){
+
+
+        var height1= document.body.scrollHeight;
+        var width1= document.body.scrollWidth;
+        var pixelSize=height1 * width1;
+        document.getElementById("pixel").innerHTML= "Pixels = "+pixelSize;
+    }
+</script>
+</body>
+</html>
