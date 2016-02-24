@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part 1</title>
+</head>
+<link rel ="stylesheet" type="text/css" href="TodoStyle.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<body>
+<p>To do list:</p>
+<ul id="todoList">
+</ul>
+Task: <input id="todo" type="text">
+<br>
+<input type="button" value="Add" onclick="addtoList()">
+<input type="button" value=Remove onClick="deleteDone()">
+<br>
+<h3>Done List</h3>
+<table id="doneTable" border="1">
+    <th>Item</th>
+    <th>Completion Date</th>
+</table>
+</body>
+<script>
+    $("document").ready(function(){
+
+        addtoList = function(){
+          var task = $("#todo");
+          var todoList = $("#todoList");
+            console.log(task);
+
+            //Adding task to todoList
+            todoList.append("<li class='notDone' onclick='updateTodo(this)'>" + task.val().trim() + "</li>");
+
+            //Clearing the Input Box
+            task.val('');
+        }
+
+        updateTodo = function(_this){
+            var context = _this;
+            $(context).toggleClass('done');
+        }
+
+        deleteDone = function(){
+            //Selecting all Done class
+            var doneItems = $(".done");
+            var todayDate = new Date();
+
+            doneItems.each(function(){
+               markAsDone( $(this) , todayDate);
+            });
+
+            doneItems.fadeOut(500, function(){
+                doneItems.remove();
+            });
+
+        }
+
+        markAsDone = function(doneItems, date){
+            //Building Table on doneItems
+            console.log(doneItems);
+            console.log(date);
+
+            $('#doneTable').hide().append('<tr><td>' + doneItems.text() + '</td>' + '<td>' + date + '</td>').fadeIn(500);
+
+        }
+
+
+
+
+
+
+    })
+</script>
+</html>
