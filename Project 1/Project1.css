@@ -1,0 +1,81 @@
+body{
+    background-color: lightgrey;
+    background-image: url("img/background1.png");
+}
+.bg-4{
+    background-color:white;
+    font-size:20px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+p.biographyBody{
+    font-family: "helvetica";
+    font-size: 22px;
+    alighment: justify;
+
+}
+ol.trackList{
+    font-size:18px;
+    font-family: "helatica";
+}
+
+h1.biographyBody{
+    font-family:"Berlin Sans FB"
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+h1.jose {
+    font-family: "Brush Script MT";
+}
+
+#jose-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header {
+    background-color: #a8dcd4;
+}
+
+#jose-image {
+    background-color: #a8dcd4;
+}
+
+.jumbotron {
+
+    margin-bottom:0;
+    background-color: #A7DCD4;
+
+}
+
+#BioFont{
+    font-family:"Berlin Sans FB";
+    font-size:30px;
+}
+embed{
+    font-size: 25px;
+}
+#Header{
+    background-color: #A7DCD4;
+}
+#BioHeader{
+    background-color:#A6C7B5;
+    background-size: 100% 100%;
+}
+nav{
+    font-family:"Brush Script MT";
+    font-size:30px;
+    margin-bottom:0;
+}
+.navbar-brand{
+    font-size:30px;
+}
+.navbar { margin-bottom:0px !important; }
+.carousel-caption { margin-top:0px !important }
