@@ -1,9 +1,21 @@
 Project 1:
 
-In this project, I will create an artist website for Jose Gonzalez. 
+In this project, I am creating an artist website for Jose Gonzalez. 
 
-On top of the website, I will make like a jumbotron with the artist name and picture. Below that, I will add a hyperlink bar with Home, Discography, Tour, Videos and Shop. That bar will be common in all the website, suppose, if we click on discography, it will take the user to the discography page with albums arts and track list, however even though we are in a different page, the top hyperlink bar will always show Home, discography, tour, Videos and Shop. 
-The tour dates will have a table with City, Date and an option to buy the ticket, when we buy any number of tickets and will have to put in our credit card information. 
-The Shop page, will tshirts and albums we can buy which will require credit card information again
-the Videos page, will have some youtubes videos (I might not include this if this is too complex)
-the home page, I will have pictures and some of my fav. lines from his songs, it will also have a guest book box where we can put in our name and the message we want to send to the artist. For this project, when we submit the  message, we will just get a message saying, "message submitted" (like an alert)
+I created a header page which is same for all webpages.
+I used carousel feature from bootstrap to display the picture of the artist on home page. 
+I created bootstrap grid system for the lay out of the page. 
+On the right of the front row, I used twitter widget to pull all the latest feed which was sent to the artist.
+I created a form which will ask for Name, email and message to send a message to the artist.
+if any of the fields is blank, it will display an error saying we need to fill out everything.
+Once everythingis filled out, it will say, message has been sent. I used jquery for the validation.
+I put another input box on the right of the second row, which will ask for email to subscribe news letter.
+It will give us an error if we invalid type of email address. I used html for the validation. 
+Below that, I used a widge to play youtube playlist for the artist which will load automatically after the page loads.
+
+For the discography page, I used accordion feature to make the albums collapse.
+For the tour page, I created a bootstrap table and at first hid the bottom of the page.
+Once we click on buy now, the page will then scroll down asking to choose the number of ticket. 
+I used flat rate for all the locations, and it will display the total amount due when we hit buy. 
+
+For the biography page, I just used few pictures and I wrapped the pictures with text. 

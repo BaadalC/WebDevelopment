@@ -1,166 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jose Gonzalez</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="Project1.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jose Gonzalez</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="Project1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-</head>
-<body>
-<div class="container">
-    <!-- Header -->
-    <div id="jose-image">
-        <img src="img/home_header.jpg" height="500px" align="center">
+    </head>
+    <body>
+    <div class="container">
+        <div>
+        <!-- Header -->
+        <div id="jose-image">
+            <img src="img/home_header.jpg" height="500px" align="center">
+
+
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="discography.html">Discography</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Header End -->
+        <!--Creating Table for the tour dates-->
+       <div class="well">
+        <table class="table table-striped table-bordered">
+        <tr class="info">
+            <th>Date</th>
+            <th>City</th>
+            <th>Location</th>
+            <th>Tickets</th>
+        </tr>
+            <tr id="minneapolis">
+                <td>May 21th, 2016</td>
+                <td>Minneapolis</td>
+                <td>Cedar Place</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>May 26th, 2016</td>
+                <td>New York City</td>
+                <td>Madison Square Garden</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 6th, 2016</td>
+                <td>Baltimore</td>
+                <td>Ravens Stadium</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 12th, 2016</td>
+                <td>Miami</td>
+                <td>Cloud 9 Theater</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 15th, 2016</td>
+                <td>Minneapolis</td>
+                <td>Minneapolis State Theater</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 18th, 2016</td>
+                <td>Saint Paul</td>
+                <td>Excel Energy Center</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 24th, 2016</td>
+                <td>Milwaukee</td>
+                <td>Univerity of Wisconsin Student Center</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 26th, 2016</td>
+                <td>Los Angeles</td>
+                <td>Hollywood Square</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>June 29h, 2016</td>
+                <td>Los Angeles</td>
+                <td>Hard Rock Cafe</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>May 26th, 2016</td>
+                <td>San Fransisco</td>
+                <td>Golden Bridge Theater</td>
+                <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
+            </tr>
+
+
+        </table>
+        </div>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="Project1.html">Home</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="tour.html">Tour</a></li>
-                <li><a href="discography.html">Discography</a></li>
-                <li><a href="biography.html">Biography</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Header End -->
-    <!--Creating Table for the tour dates-->
-    <div class="well">
-    <table class="table table-striped table-bordered">
-    <tr class="info">
-        <th>Date</th>
-        <th>City</th>
-        <th>Location</th>
-        <th>Tickets</th>
-    </tr>
-        <tr id="minneapolis">
-            <td>May 21th, 2016</td>
-            <td>Minneapolis</td>
-            <td>Cedar Place</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>May 26th, 2016</td>
-            <td>New York City</td>
-            <td>Madison Square Garden</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 6th, 2016</td>
-            <td>Baltimore</td>
-            <td>Ravens Stadium</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 12th, 2016</td>
-            <td>Miami</td>
-            <td>Cloud 9 Theater</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 15th, 2016</td>
-            <td>Minneapolis</td>
-            <td>Minneapolis State Theater</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 18th, 2016</td>
-            <td>Saint Paul</td>
-            <td>Excel Energy Center</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 24th, 2016</td>
-            <td>Milwaukee</td>
-            <td>Univerity of Wisconsin Student Center</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 26th, 2016</td>
-            <td>Los Angeles</td>
-            <td>Hollywood Square</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>June 29h, 2016</td>
-            <td>Los Angeles</td>
-            <td>Hard Rock Cafe</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
-        <tr>
-            <td>May 26th, 2016</td>
-            <td>San Fransisco</td>
-            <td>Golden Bridge Theater</td>
-            <td><button class="btn btn-primary" onclick="buy()">Buy Now</button></td>
-        </tr>
+    <!--Creating a new container for ticket buying -->
+    <div class="container" id="cart">
+        <div class="well">
+            <h2>Buy Tickets</h2>
+
+                <p>Quantity</p>
+
+            <div class="row">
+            <div class="col-md-4">
+                <select class="form-control" id="ticketNum">
+                <option value="1">1 - General Admission Ticket ($55 per ticket)</option>
+                <option value="2">2 - General Admission Ticket ($55 per ticket)</option>
+                <option value="3">3 - General Admission Ticket ($55 per ticket)</option>
+                <option value="4">4 - General Admission Ticket ($55 per ticket)</option>
+                </select>
+            </div>
+                <button class="btn btn-default" onclick="calculateTotal()">Buy</button>
+            </div>
 
 
-    </table>
+
+            <h2>Total: <span id="total"></span></div>
+        </div>
+
     </div>
-</div>
-<!--Creating a new container for ticket buying -->
-<div class="container" id="cart">
-    <div class="well">
-        <h2>Buy Tickets</h2>
-        <div class="row">
-            <p>Quantity</p>
-        </div>
-        <div class="row">
-        <div class="col-md-4">
-            <select class="form-control" id="ticketNum">
-            <option value="1">1 - General Admission Ticket</option>
-            <option value="2">2 - General Admission Ticket</option>
-            <option value="3">3 - General Admission Ticket</option>
-            <option value="4">4 - General Admission Ticket</option>
-            </select>
-        </div>
-            <button class="btn btn-default" onclick="calculateTotal()">Buy</button>
-        </div>
-
-
-
-        <h2>Total: <span id="total"></span></div>
-    </div>
-
-</div>
-<script>
-    $(document).ready(function(){
-
-        $("#cart").hide(); <!--hiding the cart until we click the buy button-->
-
-        buy = function(){
-
-            $('#cart').show();
-
-
-
-        };
-
-        calculateTotal = function(){
-            var numTickets = $('#ticketNum option:selected').val();
-            var totalPrice= parseInt(numTickets)*55
-
-            //Price Calculation Logic
-
-
-
-
-
-            $('#total').text("$"+ totalPrice);
-        }
-
-
-
-    });
-</script>
 </body>
-</html>
+    <script>
+        $(document).ready(function(){
+
+            $("#cart").hide(); <!--hiding the cart until we click the buy button-->
+
+            buy = function(){
+
+                var y = $(window).scrollTop();  //your current y position on the page
+                $(window).scrollTop(y+250);     //got this help from StackOverflow website
+                $("html, body").animate({ scrollTop: y + $(window).height() }, 600);
+                $('#cart').show();
+
+
+
+
+
+
+
+            };
+
+            calculateTotal = function(){
+                var numTickets = $('#ticketNum option:selected').val();
+                var totalPrice= parseInt(numTickets)*55
+
+                //Price Calculation Logic
+
+
+
+
+
+                $('#total').text("$"+ totalPrice);
+            }
+
+
+
+        });
+    </script>
+
+    </html>
